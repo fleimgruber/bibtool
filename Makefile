@@ -26,7 +26,7 @@
 #* Author: Gerd Neugebauer
 #*=============================================================================
 
-include makefile
+include makefile.inc
 
 DIR  = $(shell basename `pwd`)
 DIRNO  = $(shell basename `pwd`-`sed -e '/bibtool_version =/s/.*"\(.*\)".*/\1/p' -e d version.c`)
